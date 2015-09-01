@@ -1,0 +1,90 @@
+#banner {
+position:relative;
+}
+
+.slide a{display: block;}
+
+.slides_container {
+width:1000px;
+height:400px;
+display:block;
+}
+
+
+.slides_container div.slide{
+height: 400px;
+width: 1000px;
+}
+
+a.bt_left,a.bt_right{
+z-index:99;
+}
+
+#banner .next {
+left:585px;
+}
+
+/*
+Pagination
+*/
+.pagination { display: none; }
+
+/*
+Caption
+*/
+
+.caption {
+z-index:500;
+position:absolute;
+background:#000;
+background:rgba(0,0,0,.5);
+font-size: 36px;
+line-height:1.33;
+display: none;
+}
+
+.bt_left{
+display:block;
+height:32px;
+width:22px;
+background-image:url(../imgs/bt_left.png);
+background-position:top;
+background-repeat:no-repeat;
+cursor:pointer;
+position:absolute;
+top:185px;
+left:12px;
+}
+
+.bt_right{
+display:block;
+height:32px;
+width:22px;
+background-image:url(../imgs/bt_right.png);
+background-position:top;
+background-repeat:no-repeat;
+cursor:pointer;
+position:absolute;
+top:185px;
+left:965px;
+}
+
+.alpha_bar{
+width:100%;
+background: url(../imgs/bg_alphabar.png) transparent repeat;
+position:absolute;
+padding: 300px 22px 22px 22px;/*padding:20px;*/
+top:0;/*300px;*/
+height: 100%;
+color:#FFF;
+}
+
+.alpha_bar h1{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.alpha_bar p{
+font-size:14px;
+line-height:22px;
+}

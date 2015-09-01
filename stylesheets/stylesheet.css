@@ -295,8 +295,12 @@ Full-Width Styles
   background: linear-gradient(top, #373737, #212121);
 }
 
+header p{
+  color:white;
+}
+
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 #project_title {
@@ -361,14 +365,12 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
+  padding-top: 5px;
 }
 
 #footer_wrap {
   background: #212121;
 }
-
-
 
 /*******************************************************************************
 Small Device Styles

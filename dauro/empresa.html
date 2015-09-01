@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Empresa - Momento VIP</title>
+<meta http-equiv="X-UA-Compatible" content="IE=IE8,chrome=1" />  
+<meta charset="utf-8" />
+<meta name="description" content="Tel 31-2104-9800 / 31-3441-0708 / vendas@amsembalagens.com.br - Gráfica, AMS Embalagens, Formularios contínuos, Belo Horizonte-MG" />
+<meta name="author" content="orafaelreis - http://orafaelreis.com.br" />
+<meta name="keywords" content="" />
+<meta name="robots" content="ALL" />
+<meta name="language" content="pt-BR" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+<link rel="canonical" href="http://www.momentovip.com.br/" />
+
+<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'/>
+<link type="text/css" rel="stylesheet" href="css/estilo.css" />
+<link type="text/css" rel="stylesheet" href="css/slideshow.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script></head>
+<body id="empresa">
+<div id="bgcorpo">
+<div id="colCorpoPrincipal">
+ <header id="topo"> 
+ 	  <h1><a href=".">Momento VIP</a></h1>
+    <nav id="navegacao">
+     <ul id="main_menu">
+       <li class="active"><a href="empresa">empresa</a></li>
+       <li class=""><a href="servico">serviço</li>
+       <li class="" ><a href="blog">blog</li>
+       <li class=" last"><a href="orcamento">orçamento</a></li>
+     </ul>
+     </nav>
+ </header>
+ 
+ <div id="banner">
+ 
+  		<div class="slides_container">
+  			<div class="slide">
+  					<img src="uploads/banner/banner2.jpg" alt="" width="1000" height="455"/>
+  					<div class="alpha_bar caption">
+  						<a href="#"><h1>Título do Banner</h1>
+  						<p>Lorem ipsum dolor sit amet</p></a>
+            		</div>	
+        			</div><div class="slide">
+  					<img src="uploads/banner/banner.jpg" alt="" width="1000" height="455"/>
+  					<div class="alpha_bar caption">
+  						<a href="#"><h1>Banner 2</h1>
+  						<p>Lorem dolor ipsum</p></a>
+            		</div>	
+        			</div>     			
+      </div>
+            	<a href="#" class="bt_left"></a>
+      	<a href="#" class="bt_right"></a>
+       
+ </div>
+ <section id="conteudo">
+    <div id="bgconteudo">
+    <div id="colEsq">
+      <section id="interna">
+        <div class="post">
+          <h2>A Momento VIP</h2>
+          <div class="meta"></div>
+          <div class="texto">
+          <p>Enquanto testes automatizados asseguram o funcionamento de suas aplicações e, portanto,
+           também a qualidade, algumas ferramentas atuam em outra área importante do seu código:
+            a sintaxe.Ferramentas de lint são scripts que interpretam seus arquivos javascript e 
+            buscam erros como varáveis não utilizadas, espaços em branco no final de linha, ausência 
+            de ponto-e-vírgula (um ponto polêmico) entre outros.Abaixo você encontra alguns utilitários 
+            que buscam garantir melhor qualidade e padrão para seus códigos.É importante ressaltar que esse 
+            tipo de ferramenta não garante que seu código está funcionando, que a lógica está correta, 
+            garante apenas a presença de boas práticas de desenvolvimento.
+          </p>
+          
+          <p>Ferramentas de lint são scripts que interpretam seus arquivos javascript e 
+            buscam erros como varáveis não utilizadas, espaços em branco no final de linha, ausência 
+            de ponto-e-vírgula (um ponto polêmico) entre outros.Abaixo você encontra alguns utilitários 
+            que buscam garantir melhor qualidade e padrão para seus códigos.É importante ressaltar que esse 
+            tipo de ferramenta não garante que seu código está funcionando, que a lógica está correta, 
+            garante apenas a presença de boas práticas de desenvolvimento.
+          </p>
+          
+          <p style="text-align: center;"><img src="imgs/empresa-momento-vip.jpg" width="790" height="400"/></p>
+          </div>
+        
+        </div>         
+      </section>
+    </div><br clear="all" />
+    </div>
+    
+</section>
+</div><!-- fim colCorpoPrincipal-->
+
+<footer id="rodape">
+<p>Rua Sed ut perspiciatis, 211 - São Lorem, Belo Horizonte - MG <br />
+Telefones:(31) 3333-6666</p>
+</footer>
+
+<script>
+$('#banner').slides({
+	preload: true,
+	preloadImage: 'imgs/loading.gif',
+	play: 5000,
+	pause: 2500,
+	hoverPause: true,
+	next: 'bt_left',
+	prev: 'bt_right'
+});
+
+ var hover = false;
+$("#banner").mouseenter(function(){
+		if(hover)return;
+		//$("#banner .bt_left").fadeIn('fast');
+		//$("#banner .bt_right").fadeIn('fast');
+		$(".caption").fadeIn('fast',function(){hover = true;}).animate({bottom:0},200);
+}).mouseleave(function() {
+	 if(!hover)return;
+	 //$("#banner .bt_left").fadeOut('fast');
+	 //$("#banner .bt_right").fadeOut('fast');
+	 $(".caption").fadeOut('fast',function(){	hover = false;}).animate({bottom:-35},200);
+});
+</script>
+</div>
+</body>
+</html>

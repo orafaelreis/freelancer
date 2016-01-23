@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Seguros</title>
+
+<meta name="author" content="" />
+<meta name="robots" content="ALL" />
+<meta name="language" content="pt-BR" />
+<meta property="fb:admins" content="698511560202158"/>
+<meta http-equiv="X-UA-Compatible" content="IE=IE8,chrome=1" />
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="imgs/favicon.png">
+<link rel="canonical" href="http://localhost" />
+<link rel="stylesheet" href="css/normalize-skeleton-style.min.css">
+<link rel="stylesheet" href="css/style.css">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<body>
+  <div class="container page">
+      <header>
+    <div id="topo">
+      <h1><a href=".">Logo</a></h1>
+    </div>
+      <nav>
+       <ul id="main_menu" class="row">
+         <li class="one-third column"><a href="empresa.html">Empresa</a></li>
+         <li class="one-third column"><a href="seguradoras.html">Seguradoras</a></li>
+         <li class="one-third column"><a href="contato.html">Contato</a></li>
+       </ul>
+       </nav>
+   </header>
+    <div class="content">
+      <h2>Contato</h2>
+      <div class="row">
+        <div class="six columns">
+        <div class="address">Rua Cristina Maria de Assis,431
+        Bairro Califórnia - Belo Horizonte MG</div>
+        ​
+        <div>asigurarecorretora@gmail.com</div>
+        <div>Tel: (31) 3582-3760 | (31) 99217-0752</div>
+        ​<div>​Toll Free: 1800-000-0000</div>
+        </div>
+
+        <div class="six columns">
+        <p>Solicite seu orçamento sem compromisso deixando seu contato à seguir:</p>
+        <div id="CntctFrm0wrapper" class="s10wrapper" data-reactid=".0.">
+
+          <p id="form_warning"></p>
+          <form action="contato.php" method="POST" onsubmit="return validaForm(this);">
+            <div class="row">
+              <input type="text" name="fnome" class="" placeholder="Nome" required>
+              <input type="text" name="femail" class="" placeholder="Email">
+              <!-- <label for="ftelefone">Telefone</label> -->
+              <input type="text" name="ftelefone" id="ftelefone" class="" placeholder="Telefone (XX) XXXX-XXXX" maxlength="15">
+              <input type="text" name="fendereço" class="" placeholder="Endereço">
+              <textarea name="fmensagem" class="" placeholder="Mensagem"></textarea>
+              <button id="CntctFrm0submit" class="" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <footer>
+  <div class="container">
+      <div>Global Seguros © 2015</div>
+      <p class="developedby inset_right">Desenvolvido por <a href="http://orafaelreis.com.br" alt="_blank">Rafael Reis</a></p>
+  </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/maskbrphone.js"></script>
+    <script src="./js/formvalidation.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#ftelefone').maskbrphone();
+      });
+    </script>
+
+</body>
+</html>

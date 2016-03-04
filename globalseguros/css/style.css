@@ -17,15 +17,15 @@ min-height: 100%;
 
 
 #topo h1{text-indent: -99999em;float: left;}
-#topo h1 a{margin: 0;display: block;background: url(../imgs/logo.png) no-repeat center center transparent;width: 156px;height: 156px;}
+#topo h1 a{margin: 0;display: block;background: url(../imgs/logo.png) no-repeat center center transparent;width: 146px;height: 173px;}
 #topo {background: url('../imgs/topo.jpg') no-repeat right center  #fff;height: 402px; color: #fff;}
 
 
-#main_menu{background-color: #000; margin: 0; padding: 0}
+/*#main_menu{background-color: #000; margin: 0; padding: 0}*/
 #main_menu li, li{margin: 0; list-style: none;}
 #main_menu li a{color: #fff; text-decoration: none;display: block; text-align: center; padding: 0.5em 0em; margin: 0; font-size: 1em }
-#main_menu li.active a{color:#fff;}
-#main_menu li a:hover{color:#000; background-color: #FFF}
+#main_menu li.active a{text-decoration: underline; color: #0000AF;}
+#main_menu li a{color:#000; background-color: #FFF; font-size: 1.2em;}/*li a:hover*/
 
 .page{
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.5);
@@ -61,7 +61,7 @@ display: inline-block;
 }
 
 .seguradoras li img{
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
   display: block;
 }
 
@@ -71,7 +71,7 @@ display: inline-block;
   left: 0;
   top: 0;
   font-size: 1.5em;
-  width: 300px
+  width: 100%
 }
 
 #home ul.seguradoras{
@@ -128,7 +128,7 @@ footer div{
 .developedby{
   text-align: right;
   color: #fff;
-  font-size: .5em;
+  font-size: 0.8em;
 }
 
 #form_warning{
@@ -142,6 +142,6 @@ input.error{
 
 @media (min-width: 750px) {
 #main_menu li{
-width: 33.3333%;
+  width: 120px;
 }
 }
